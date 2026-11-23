@@ -89,7 +89,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🔀 Git workflow
+## Git workflow
 
 We use **feature branches** and **pull requests**. Nobody pushes directly to `main`.
 
@@ -185,7 +185,7 @@ Blockers: Need final colours from design before styling the filter buttons
 - If you have a blocker, the Scrum Master follows up the same day
 - Nothing to report? Post anyway, e.g. "Off today" or "No progress, back tomorrow"
 
-## 📅 Sprints
+## Sprints
 
 | Sprint | Dates | Goal |
 |--------|-------|------|
@@ -197,7 +197,7 @@ Sprint reviews and retrospectives are documented in [`/docs/sprints`](./docs/spr
 
 ---
 
-## 🔍 Research & design
+## Research & design
 
 - **Customer interviews & personas:** [`/docs/research`](./docs/research)
 - **Wireframes & design:** [Figma link]
@@ -205,7 +205,7 @@ Sprint reviews and retrospectives are documented in [`/docs/sprints`](./docs/spr
 
 ---
 
-## 📊 Lighthouse results
+## Lighthouse results
 
 | Category | Score |
 |----------|-------|
@@ -216,12 +216,12 @@ Sprint reviews and retrospectives are documented in [`/docs/sprints`](./docs/spr
 
 ---
 
-## 📚 Resources
+## Resources
 
 
 
 ---
 
-## 📄 License
+## License
 
 This project was created for educational purposes at Noroff.
