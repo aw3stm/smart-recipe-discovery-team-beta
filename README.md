@@ -3,8 +3,8 @@
 A fast, distraction-free recipe discovery web app built for **FlavorCraft Labs**.
 Search, filter and save recipes – no ads, no backstories, just cooking.
 
-🔗 **Live site:** [link when deployed]
-📋 **Project board:** [link to GitHub Projects]
+🔗 **Live site:** [smart-recipe-discovery-team-beta.vercel.app]
+📋 **Project board:** [https://github.com/users/aw3stm/projects/16]
 🎨 **Figma:** [link to your design]
 
 ---
