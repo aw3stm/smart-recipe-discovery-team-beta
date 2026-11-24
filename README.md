@@ -39,15 +39,15 @@ Built over 3 one-week sprints as a Noroff school project, with
 
 ## Team [Beta]
 
-| Name | Role | 
-|------|------|
-| [Anna Vestman] | Scrum Master  
-| [Ellen Jensen] | Lead Designer / Researcher  
-| [Lene Johansen] | Frontend Developer  
-| [Mia Stubb-Olsen] | Frontend Developer 
-| [Pål Omland] | Frontend Developer 
-| [Ole Håvard] | QA Lead  
-| [Steffen Heltne] | SEO & Analytics Specialist 
+| Name              | Role                       |
+| ----------------- | -------------------------- |
+| [Anna Vestman]    | Scrum Master               |
+| [Ellen Jensen]    | Lead Designer / Researcher |
+| [Lene Johansen]   | Frontend Developer         |
+| [Mia Stubb-Olsen] | Frontend Developer         |
+| [Pål Omland]      | Frontend Developer         |
+| [Ole Håvard]      | QA Lead                    |
+| [Steffen Heltne]  | SEO & Analytics Specialist |
 
 ---
 
@@ -65,6 +65,7 @@ Built over 3 one-week sprints as a Noroff school project, with
 ## Getting started
 
 ### Prerequisites
+
 - Node.js [version, 20+]
 - npm
 
@@ -81,11 +82,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start the development server |
-| `npm run build` | Build for production |
-| `npm run lint` | Run ESLint |
+| Command         | Description                  |
+| --------------- | ---------------------------- |
+| `npm run dev`   | Start the development server |
+| `npm run build` | Build for production         |
+| `npm run lint`  | Run ESLint                   |
 
 ---
 
@@ -108,13 +109,13 @@ We use **feature branches** and **pull requests**. Nobody pushes directly to `ma
 
 ### Branch naming
 
-| Type | Example |
-|------|---------|
-| Feature | `feature/recipe-search` |
+| Type    | Example                  |
+| ------- | ------------------------ |
+| Feature | `feature/recipe-search`  |
 | Bug fix | `fix/empty-search-state` |
-| Styling | `style/recipe-card` |
-| Docs | `docs/readme-setup` |
-| Chore | `chore/eslint-config` |
+| Styling | `style/recipe-card`      |
+| Docs    | `docs/readme-setup`      |
+| Chore   | `chore/eslint-config`    |
 
 ### Commit messages
 
@@ -180,6 +181,7 @@ Blockers: Need final colours from design before styling the filter buttons
 ```
 
 ### Guidelines
+
 - Keep it short, 1–2 lines per question
 - Reference issue numbers (e.g. `#14`) so we can follow progress on the board
 - If you have a blocker, the Scrum Master follows up the same day
@@ -187,10 +189,10 @@ Blockers: Need final colours from design before styling the filter buttons
 
 ## Sprints
 
-| Sprint | Dates | Goal |
-|--------|-------|------|
-| Sprint 1 | [Tue 24/11] – [Tue 1/12] | Research, design and core search/display |
-| Sprint 2 | [Tue 1/12] – [Tue 8/12] | Detail page, favourites, SEO and analytics |
+| Sprint   | Dates                    | Goal                                                   |
+| -------- | ------------------------ | ------------------------------------------------------ |
+| Sprint 1 | [Tue 24/11] – [Tue 1/12] | Research, design and core search/display               |
+| Sprint 2 | [Tue 1/12] – [Tue 8/12]  | Detail page, favourites, SEO and analytics             |
 | Sprint 3 | [Tue 8/12] – [Tue 15/12] | Data-driven refinements, QA, Lighthouse and final demo |
 
 Sprint reviews and retrospectives are documented in [`/docs/sprints`](./docs/sprints).
@@ -207,21 +209,160 @@ Sprint reviews and retrospectives are documented in [`/docs/sprints`](./docs/spr
 
 ## Lighthouse results
 
-| Category | Score |
-|----------|-------|
-| Performance | [ ] |
-| Accessibility | [ ] |
-| Best Practices | [ ] |
-| SEO | [ ] |
+| Category       | Score |
+| -------------- | ----- |
+| Performance    | [ ]   |
+| Accessibility  | [ ]   |
+| Best Practices | [ ]   |
+| SEO            | [ ]   |
 
 ---
 
 ## Resources
-
-
 
 ---
 
 ## License
 
 This project was created for educational purposes at Noroff.
+
+## Tech stack
+
+- **Framework:** Next.js 16.4.6 (App Router)
+- **Language:** TypeScript (strict mode)
+- **UI library:** React 19.3.0
+- **Styling:** Tailwind CSS 4.3.3
+- **Hosting:** Vercel (planned)
+- **Analytics:** To be confirmed
+- **Linting:** ESLint with Next.js configuration
+- **Formatting:** Prettier with Tailwind CSS plugin
+- **Testing:** Vitest, React Testing Library and jsdom
+- **Project management:** GitHub Projects
+- **Package manager:** npm
+
+---
+
+## Getting started
+
+### Prerequisites
+
+The project uses the following development environment:
+
+- Node.js: 24.18.0 (supported major version: 24.x)
+- npm: 11.16.0 (supported major version: 11.x)
+
+The Node.js version is documented in `.nvmrc`, and the supported
+versions are declared in `package.json`.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/aw3stm/smart-recipe-discovery-team-beta.git
+cd smart-recipe-discovery-team-beta
+```
+
+Install dependencies using the committed lockfile:
+
+```bash
+npm ci
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Scripts
+
+| Command                | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `npm run dev`          | Start the development server             |
+| `npm run build`        | Create a production build                |
+| `npm run start`        | Start the production server              |
+| `npm run lint`         | Run ESLint                               |
+| `npm run format`       | Format project files with Prettier       |
+| `npm run format:check` | Check formatting without modifying files |
+| `npm run typecheck`    | Check TypeScript without emitting files  |
+| `npm run test`         | Run all automated tests once             |
+| `npm run test:watch`   | Run tests in watch mode                  |
+| `npm run check`        | Run the complete verification pipeline   |
+
+### Project structure
+
+```text
+smart-recipe-discovery-team-beta/
+├── app/                 # Routes, pages, layouts and global CSS
+├── components/          # Reusable UI components
+├── lib/                 # API services and shared application logic
+├── types/               # Shared TypeScript definitions
+├── utils/               # Pure utility functions
+├── public/              # Static assets
+├── docs/                # Project documentation
+├── .nvmrc               # Node.js version
+├── .prettierrc.json     # Shared formatting configuration
+├── .prettierignore      # Formatting exclusions
+├── eslint.config.mjs    # ESLint configuration
+├── next.config.ts       # Next.js configuration
+├── vitest.config.mts    # Vitest configuration
+├── vitest.setup.ts      # Shared test setup
+├── tsconfig.json        # TypeScript configuration
+├── package.json         # Dependencies and scripts
+├── package-lock.json    # Locked dependency versions
+└── README.md
+```
+
+### Testing conventions
+
+Automated testing supports the team's QA process and helps prevent
+regressions throughout development.
+
+- Use Vitest for unit tests.
+- Use React Testing Library for component tests.
+- Colocate tests alongside the files they test.
+- Use `.test.ts` for utility tests and `.test.tsx` for component tests.
+- Use the default Node environment for pure logic tests.
+- Add `// @vitest-environment jsdom` to tests requiring a browser
+  environment.
+- Prefer accessible role and label queries when testing components.
+- Focus on meaningful behaviour rather than implementation details.
+
+DOM matchers and automatic React component cleanup are configured
+in the shared test setup.
+
+### Code quality and verification
+
+Before submitting a pull request, run:
+
+```bash
+npm run check
+```
+
+The verification pipeline runs the following checks in order:
+
+1. TypeScript
+2. ESLint
+3. Prettier
+4. Automated tests
+5. Production build
+
+All checks must pass before the code is ready for review.
+Automated checks complement, but do not replace, manual QA.
+
+### Technical decisions
+
+- ESLint 9 is retained due to peer dependency incompatibilities
+  between ESLint 10 and the installed React ESLint plugin.
+  Revisit this decision when compatible plugin versions are available.
+- Cache Components and Partial Prefetching are disabled initially
+  to simplify rendering and caching behaviour.
+- The committed package lockfile ensures consistent dependency
+  installation across development environments.
+- Formatting is standardised using Prettier, including automatic
+  Tailwind CSS class sorting.
+
+---
