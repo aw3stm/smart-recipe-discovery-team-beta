@@ -1,4 +1,5 @@
 import { getAllRecipes } from "@/lib/api";
+import RecipeGrid from "@/components/RecipeGrid";
 
 export default async function Home() {
   const recipes = await getAllRecipes();
@@ -14,7 +15,11 @@ export default async function Home() {
         {recipes.length === 0 ? (
           <p>No recipes available.</p>
         ) : (
-          <p>{recipes.length} recipes available.</p>
+          <RecipeGrid>
+            {recipes.map((recipe) => (
+              <li key={recipe.id}>{recipe.title}</li>
+            ))}
+          </RecipeGrid>
         )}
       </section>
     </main>
