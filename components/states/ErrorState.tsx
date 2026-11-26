@@ -14,8 +14,8 @@ export default function ErrorState({
   onRetry,
 }: ErrorStateProps) {
   return (
-    <div role="status" aria-live="polite">
-      <p>{message}</p>
+    <div>
+      <p role="alert">{message}</p>
       <button type="button" onClick={onRetry}>
         Retry
       </button>

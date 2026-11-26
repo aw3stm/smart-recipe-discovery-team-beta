@@ -30,4 +30,11 @@ describe("ErrorState", () => {
     fireEvent.click(screen.getByRole("button", { name: "Retry" }));
     expect(onRetry).toHaveBeenCalledTimes(1);
   });
+
+  it("displays the error message with an alert role", () => {
+    render(<ErrorState onRetry={vi.fn()} />);
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "Something went wrong. Please try again.",
+    );
+  });
 });
