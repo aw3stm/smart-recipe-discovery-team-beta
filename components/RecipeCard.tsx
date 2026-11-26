@@ -1,6 +1,6 @@
 import type { Recipe } from "@/types/Recipe";
 import Image from "next/image";
-import HeartIcon from "@/components/icons/HeartIcon";
+import FavoriteButton from "@/components/icons/FavoriteButton";
 import Link from "next/link";
 
 function RecipeCard({ recipe }: { recipe: Recipe }) {
@@ -11,7 +11,7 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
           <span className="absolute top-3 left-0 z-1 rounded-r-full bg-[#D9D9D9] px-5 py-2 text-sm font-medium">
             {recipe.category}
           </span>
-          <HeartIcon className="absolute top-3 right-3 z-1" />
+          <FavoriteButton className="absolute top-3 right-3 z-1" />
           <Image
             src={recipe.image?.url || "/images/fallback-image.webp"}
             alt={recipe.image?.alt || recipe.title}

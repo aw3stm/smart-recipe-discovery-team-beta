@@ -1,4 +1,4 @@
-function HeartIcon({ className }: { className?: string }) {
+function FavoriteButton({ className }: { className?: string }) {
   return (
     <button
       type="button"
@@ -17,4 +17,4 @@ function HeartIcon({ className }: { className?: string }) {
   );
 }
 
-export default HeartIcon;
+export default FavoriteButton;
