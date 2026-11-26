@@ -32,14 +32,14 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
           <p className="truncate">{recipe.description}</p>
         </div>
 
-        <div className="mx-3 mt-7 mb-5 flex gap-3">
-          <span className="flex-1 rounded-full bg-[#D9D9D9] px-3 py-2 text-center text-sm font-medium">
+        <div className="mx-3 mt-7 mb-5 flex gap-1.5 sm:gap-3">
+          <span className="flex-1 rounded-full bg-[#D9D9D9] px-1 py-2 text-center text-sm font-medium whitespace-nowrap sm:px-3">
             {recipe.prepTime + recipe.cookTime} min
           </span>
-          <span className="flex-1 rounded-full bg-[#D9D9D9] px-3 py-2 text-center text-sm font-medium">
+          <span className="flex-1 rounded-full bg-[#D9D9D9] px-1 py-2 text-center text-sm font-medium whitespace-nowrap sm:px-3">
             {recipe.servings} servings
           </span>
-          <span className="flex-1 rounded-full bg-[#D9D9D9] px-3 py-2 text-center text-sm font-medium">
+          <span className="flex-1 rounded-full bg-[#D9D9D9] px-1 py-2 text-center text-sm font-medium whitespace-nowrap sm:px-3">
             {recipe.difficulty}
           </span>
         </div>
