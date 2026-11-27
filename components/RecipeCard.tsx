@@ -24,7 +24,7 @@ function RecipeCard({ recipe }: { recipe: Recipe }) {
           <h2>
             <Link
               href={`/recipes/${recipe.id}`}
-              className="after:absolute after:inset-0 focus-visible:after:rounded-xl focus-visible:after:ring-2 focus-visible:after:ring-black"
+              className="after:absolute after:inset-0 focus-visible:outline-none focus-visible:after:rounded-xl focus-visible:after:ring-2 focus-visible:after:ring-black"
             >
               {recipe.title}
             </Link>
