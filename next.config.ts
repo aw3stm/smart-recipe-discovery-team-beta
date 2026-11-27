@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       ...[
         "i.imghippo.com",
         "i.postimg.cc",
+
         "images.matprat.no",
         "images.pexels.com",
         "imgur.com",
@@ -27,6 +28,15 @@ const nextConfig: NextConfig = {
         pathname: "/**",
         search: "",
       })),
+
+      // Temporary workaround for an invalid Imgur album URL in the Noroff API.
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+        port: "",
+        pathname: "/Z3B9xzn.png",
+        search: "",
+      },
 
       // Noroff returns varying query strings for these two hosts.
       {
