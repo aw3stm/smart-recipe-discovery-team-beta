@@ -23,7 +23,7 @@ const mockRecipe: Recipe = {
   instructions: [],
   tags: [],
   image: {
-    url: "https://example.com/pizza.jpg",
+    url: "/images/fallback-image.webp",
     alt: "Margherita pizza",
   },
   owner: {
@@ -53,7 +53,7 @@ describe("Home page", () => {
     vi.mocked(getAllRecipes).mockResolvedValue([]);
   });
 
-  it("renders recipes when the API returns data", async () => {
+  it("renders recipe cards when the API returns data", async () => {
     vi.mocked(getAllRecipes).mockResolvedValue([
       mockRecipe,
       {
@@ -66,8 +66,17 @@ describe("Home page", () => {
     render(await Home());
 
     expect(screen.getAllByRole("listitem")).toHaveLength(2);
-    expect(screen.getByText("Margherita Pizza")).toBeInTheDocument();
-    expect(screen.getByText("Tomato Soup")).toBeInTheDocument();
+    expect(screen.getAllByRole("article")).toHaveLength(2);
+
+    expect(
+      screen.getByRole("link", { name: "Margherita Pizza" }),
+    ).toHaveAttribute("href", "/recipes/123");
+
+    expect(screen.getByRole("link", { name: "Tomato Soup" })).toHaveAttribute(
+      "href",
+      "/recipes/456",
+    );
+
     expect(screen.queryByText("No recipes available.")).not.toBeInTheDocument();
   });
 
